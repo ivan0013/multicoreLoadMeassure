@@ -63,7 +63,7 @@ def exportDataAsCSV():
     header = [("core "+str(i)) for i in range(0, CORENUMBER) ]
     body = [(",".join(i)) for i in meassures]
     f = open( 'coreUsage.csv', 'w' )
-    f.write(" ".join(header))
+    f.write(", ".join(header))
     f.write("\n")
     f.write("\n".join(body))
     f.close()
