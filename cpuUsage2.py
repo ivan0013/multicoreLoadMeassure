@@ -21,9 +21,7 @@ class Meassure:
             self.time = time.strftime("%d/%m/%Y %H:%M:%S")
             self.coreUsage = coreUsage
             self.processList = processList
-            
-            Meassure.count.append(self)
-            
+                        
         def getCoreUsage(self):
             return self.coreUsage
             
